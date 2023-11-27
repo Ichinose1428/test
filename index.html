@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>訪問者数カウント</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #counterContainer {
+      text-align: center;
+    }
+  </style>
   <script>
     // GitHub リポジトリ情報
     const repoOwner = 'your-username'; // GitHub ユーザー名
@@ -30,7 +42,10 @@
   </script>
 </head>
 <body>
-  <h1>訪問者数カウント</h1>
-  <p>現在の訪問者数: <span id="visitorCount">0</span></p>
+  <div id="counterContainer">
+    <h1>訪問者数カウント</h1>
+    <p>現在の訪問者数: <span id="visitorCount">0</span></p>
+  </div>
 </body>
 </html>
+
